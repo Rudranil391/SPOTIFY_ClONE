@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+    height: 500px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    
+}
+nav ul li{
+    padding: 0 12px;
+}
+.logo img{
+    height: 50px;
+    width: 77px;
+    padding: 0 7px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder; 
+}
+
+.container{
+    height: 66vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;;
+    display: flex;
+    margin: 8px auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 30px;
+    background-image: url('bg1.jpg');
+    background-size: 974px 600px;
+}
+
+
+.songItemContainer{
+    margin: 30px 0;
+}
+.songItem{
+    height: 45px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.songItem img{
+   width: 40px;
+   margin: 0 15px;
+   border-radius: 20px;
+
+}
+
+.timestamp{
+    margin: 0 10px;
+}
+.timestamp i{
+    cursor: pointer;
+    margin: 3px;
+}
+
+.bottom{ 
+    position: sticky;
+    height: 110px;
+    background-color: rgb(118, 121, 130);
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+  margin-top: 15px;
+
+  
+}
+.icons i{
+    cursor: pointer;
+    margin: 5px;
+}
+
+#myprogressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 8vw;
+    font-family: 'Varela Round',sans-serif;;
+    
+}
+.songInfo img{
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  position: relative;
+  left: -6px;
+  bottom: -9px;
+}
